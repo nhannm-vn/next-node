@@ -3,18 +3,23 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'http',
-        hostname: 'localhost',
-        port: '4000'
+        protocol: "http",
+        hostname: "localhost",
+        port: "4000",
         // pathname: '/photos/**'
-      }
-    ]
+      },
+      {
+        protocol: "https",
+        hostname: "api.minhnhan.io.vn",
+        // pathname: '/photos/**'
+      },
+    ],
   },
   logging: {
     fetches: {
-      fullUrl: true
-    }
-  }
-}
+      fullUrl: true,
+    },
+  },
+};
 
-export default nextConfig
+export default nextConfig;
